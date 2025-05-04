@@ -1,35 +1,55 @@
-<div style="display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, 1fr); gap: 10px; height: 600px;">
-  <!-- Grande cuadrado -->
-  <div style="background: url('https://64.media.tumblr.com/b4616d20b7cdc769e5b110f2cc13d450/23ad5ba1c32c9c08-eb/s1280x1920/e07f6d90296b093203151ca9c7c5cd0dbab3452e.pnj') center/cover; grid-row: span 2; position: relative;">
-    <div class="overlay">NEWS RELEASE<br>3 MIN READ<br><strong>President Trump’s FY26 Budget Revitalizes Human Space Exploration</strong></div>
-  </div>
-
-  <!-- Rectangular vertical -->
-  <div style="background: url('https://64.media.tumblr.com/b4616d20b7cdc769e5b110f2cc13d450/23ad5ba1c32c9c08-eb/s1280x1920/e07f6d90296b093203151ca9c7c5cd0dbab3452e.pnj') center/cover; position: relative;">
-    <div class="overlay">BLOG<br>2 MIN READ<br><strong>Crew Cleans Up After Spacewalk, Studies Biology...</strong></div>
-  </div>
-
-  <!-- Semi-rectangular arriba -->
-  <div style="display: flex; flex-direction: column; gap: 10px;">
-    <div style="background: url('https://64.media.tumblr.com/b4616d20b7cdc769e5b110f2cc13d450/23ad5ba1c32c9c08-eb/s1280x1920/e07f6d90296b093203151ca9c7c5cd0dbab3452e.pnj') center/cover; height: 50%; position: relative;">
-      <div class="overlay">ARTICLE<br>4 MIN READ<br><strong>NASA’s Chandra Diagnoses Fracture...</strong></div>
+<div style="display: grid; grid-template-columns: 720px 400px; grid-template-rows: 360px 360px; gap: 10px;">
+  <!-- Imagen cuadrada grande (720x720 aprox.) -->
+  <div style="background: url('img1.jpg') center/cover; grid-row: span 2; position: relative;">
+    <div class="overlay">
+      <p>NEWS RELEASE</p>
+      <p>3 MIN READ</p>
+      <strong>President Trump’s FY26 Budget Revitalizes Human Space Exploration</strong>
     </div>
+  </div>
 
-    <!-- Semi-rectangular abajo -->
-    <div style="background: url('https://64.media.tumblr.com/b4616d20b7cdc769e5b110f2cc13d450/23ad5ba1c32c9c08-eb/s1280x1920/e07f6d90296b093203151ca9c7c5cd0dbab3452e.pnj') center/cover; height: 50%; position: relative;">
-      <div class="overlay">ARTICLE<br>2 MIN READ<br><strong>Hubble Images a Peculiar Spiral</strong></div>
+  <!-- Imagen vertical (400x720 aprox.) -->
+  <div style="background: url('img2.jpg') center/cover; height: 720px; position: relative;">
+    <div class="overlay">
+      <p>BLOG</p>
+      <p>2 MIN READ</p>
+      <strong>Crew Cleans Up After Spacewalk, Studies Biology...</strong>
+    </div>
+  </div>
+
+  <!-- Imagen semi-rectangular superior derecha -->
+  <div style="background: url('img3.jpg') center/cover; height: 175px; position: relative;">
+    <div class="overlay">
+      <p>ARTICLE</p>
+      <p>4 MIN READ</p>
+      <strong>NASA’s Chandra Diagnoses Cause of Fracture...</strong>
+    </div>
+  </div>
+
+  <!-- Imagen semi-rectangular inferior derecha -->
+  <div style="background: url('img4.jpg') center/cover; height: 175px; position: relative;">
+    <div class="overlay">
+      <p>ARTICLE</p>
+      <p>2 MIN READ</p>
+      <strong>Hubble Images a Peculiar Spiral</strong>
     </div>
   </div>
 </div>
 
 <style>
   .overlay {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 1em;
     position: absolute;
     bottom: 0;
     width: 100%;
     font-family: sans-serif;
+    font-size: 14px;
+  }
+  strong {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
   }
 </style>
